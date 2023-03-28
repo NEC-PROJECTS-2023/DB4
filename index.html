@@ -1,0 +1,160 @@
+<html>
+    <style>
+      a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+      #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+        body {
+          font-size: 28px;
+        }
+        
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #4CAF50;
+        }
+        </style>
+    <body>
+          
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="templates/about.html">about</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+    <form action="/" method="POST">
+    <input type="text" id="hi" name="us" placeholder="enter your search">
+        
+        <input type="submit" value="submit">
+    </form>
+    <table id="customers">
+  
+            {% for a,b,c in  L %}
+            <tr>
+                <td>{{ a }}</td>
+                <td><a href="{{ b }}">Link</a></td>
+                <td>{{ c }}</td>
+            </tr>
+            {% endfor %}
+        
+    </table>
+    <center><table style="background-color:#a6e21f;" id = "rcorners1" id = "line" class="table-layout">
+      <tr><th>&nbsp;&nbsp;</th>
+                  <th><a href="https://www.amazon.in/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScIsjMJlI5Kam1Nh3lG1af2V0uO4uipAV-rw&usqp=CAU" class="mobilelogo" width="90",height="90"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.flipkart.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwZpOyGJMh83665KJTbPhVC-KECVyQSXsy1n7i8koMPWpXq__G215sqa99xq5KVz1w7ek&usqp=CAU" class="mobilelogo" width="90",height="90"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.myntra.com/"><img src="https://gumlet.assettype.com/afaqs%2F2021-01%2F15f5f827-8e29-4520-af8d-a0f353b8da17%2Fimages.png?auto=format&q=35&w=1200" class="mobilelogo" width="90",height="90"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.nykaa.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9sEOP6MpCj1UxvinqKA_qJfo9aUFp2MuIAD7s2SFEVBwJGnUEovYG7QjbTGXvmXGi-U&usqp=CAU" class="mobilelogo" width="90",height="90"></a></th>
+                </tr>
+                <tr style="background-color:#a6e21f;">
+                  <td>&nbsp;&nbsp;</td> 
+                  <td style="font-family:bold;font-size: 0.6cm;">Amazon</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">Flipkart</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">Myntra</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">Nykaa</td>
+                  <th>&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+  </table></center><br>
+  <center><table style="background-color:#a6e21f;" id = "rcorners1" class="table-layout">
+      <tr><th>&nbsp;&nbsp;</th>
+                  <th><a href="https://www.Bigbasket.com/"><img src="https://images.yourstory.com/cs/images/companies/logosC021575978360413png" class="mobilelogo" width="100",height="100"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.1mg.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMRvyrs5ALYFqui5w83zNgEJUyvQBEtoxQaGDprmatw_bzPgd7h0UZ14ctt5UlrOx3PI&usqp=CAU" class="mobilelogo" width="90",height="90"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.NetMeds.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5aRhF1m-LY0IpRiFkeEWdCOJggwAjOPz2A&usqp=CAU" class="mobilelogo" width="90",height="90"></a>&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;</th>
+                  <th><a href="https://www.meesho.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9WompEzMjpah3kVvc53n0yW-wXCCtK6RrPY5Srlxgv1D6Hat1-hByK_hONt9eAeTveyY&usqp=CAU" class="mobilelogo" width="90",height="90"></a></th>
+                </tr>
+                <tr style="background-color:#a6e21f;">
+                  <td>&nbsp;&nbsp;</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">Bigbasket</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">1Mg</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">NetMeds</td>
+                  <td style="font-family:bold;font-size: 0.6cm;">Meesho</td>
+                  <th>&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+  </table></center>
+    </body>
+</html>
